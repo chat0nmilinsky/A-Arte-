@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A 'Arte' por Rodrigo Silva</title>
+    <style>
+        body {
+            background-color: rgb(255, 246, 235);
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 0;
+        }
+
+        header {
+            background-color: #333333;
+            padding: 20px 0px 10px 0px;
+            margin: 0px;
+            top: 0;
+            box-sizing: border-box;
+            color: rgb(255, 246, 235);
+            text-align: center;
+        }
+
+        .btn {
+            background: none;
+            color: rgb(255, 246, 235);
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 350ms ease-in;
+            font-size: medium;
+            padding: 0px 20px 0px 20px;
+        }
+
+        .btn:hover {
+            color: rgb(167, 167, 167);
+        }
+
+
+
+
+
+
+
+        /*Especial*/
+        .mobile-page body {
+            background-color: rgb(255, 246, 235);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A 'Arte' por <b>Rodrigo Silva</b></h1>
+        <nav>
+            <a href="#"><button class="btn">Início</button></a>
+            <a href="#"><button class="btn">Desenhos</button></a>
+            <a href="#"><button class="btn">Pinturas</button></a>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <script>
+        window.onload = function () {
+            
+            //
+            let userResponse = confirm('Estás a navegar através do telemóvel?');
+
+
+            //
+            if (userResponse) {
+                document.body.classList.add("mobile-page");
+            } else {
+                document.body.classList.remove("mobile-page");
+            }
+        };
+    </script>
+</body>
+</html>
